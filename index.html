@@ -1,0 +1,126 @@
+<html>
+    <head>
+      <!-- <script>
+            function validate()
+            {
+                if(document.getElementById('naame').value=='')
+                {
+                    alert('please enter first name');
+                }
+                if(document.getElementById('last').value=='')
+                {
+                    alert('please enter last name');
+                }
+            }
+            </script>--> 
+            <script>
+                function calc(){
+  var data = {
+  firstname : document.getElementById("naame").value,
+  lastname : document.getElementById("last").value
+  }
+
+  console.log(data);
+  var fn=prompt("enter ur firstname");
+        var email=prompt("enter ur email");
+        data.firstname=fn;
+        data.Email=email;
+        console.log(data);
+
+
+}
+            </script>
+    </head>
+<body style="background-color: pink;">
+<h1 align="center">REGISTRATION FORM</h1>
+<form method="GET" onsubmit="validate();">
+<table align="center" cellpadding="15">
+    <tr>
+        <td>FIRST NAME</td>
+        <td><input type="text" id='naame' name="naame" v-model="naame" placeholder="enter your first name here.." size="50" required></td>
+    </tr>
+    <tr>
+        <td>LAST NAME</td>
+        <td><input type="text" id='last' name="last" v-model="last" placeholder="enter your last name here.." size="50" required></td>
+    </tr>
+    <tr>
+        <td>USER NAME</td>
+        <td><input type="text" name="user" placeholder="enter your user name here.." size="50" ></td>
+    </tr>
+    <tr>
+        <td>PASWORD</td>
+        <td><input type="password" name="pass" placeholder="enter your user name here.." size="50" ></td>
+    </tr>
+    <tr>
+        <td>DATE OF BIRTH</td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td>EMAIL</td>
+        <td><input type="email" name="emaill" placeholder="enter your email id here.." size="50"></td>
+    </tr>
+    <tr>
+        <td>MOBILE NUMBER</td>
+        <td><input type="text" placeholder="enter your mobile number here.." size="50"></td>
+    </tr>
+    <tr>
+        <td>LANGUAGE KNOWN</td>
+        <td><input type="checkbox" value="english" >
+            <label>english</label>
+            <input type="checkbox" value="hindi" >
+            <label>hindi</label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            GENDER
+        </td>
+        <td>
+            <input type="radio" name="yy">
+            <label>Male</label>
+            <input type="radio" name="yy">
+            <label>Female</label>
+        </td>
+    </tr>
+    <tr>
+        <td>ADDRESS</td>
+        <td><textarea rows="5" cols="50">enter your address here..."</textarea></td>
+    </tr>
+    <tr>
+        <td>CITY</td>
+        <td><input type="text" placeholder="enter your city here.." size="50"></td>
+    </tr>
+    <tr>
+        <td>PIN CODE</td>
+        <td><input type="text" placeholder="enter your pincode here.." size="50"></td>
+    </tr>
+    <tr>
+        <td>STATE</td>
+        <td><input type="text" placeholder="enter your state here.." size="50"></td>
+    </tr>
+    <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" value="india" readonly size="50"></td>
+    </tr>
+        <tr>
+            <td>ROLE</td>
+            <td>
+                <select>
+                    <option></option>
+                    <option>student</option>
+                    <option>admin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><!--<input onClick="calc()" type="submit" value="submit">--><input type="button" onClick="calc()" value="Submit">
+                <input type="reset"  value="Reset"></td>
+        </tr>
+    
+    
+
+
+</table>
+</form>
+</body>
+</html>
